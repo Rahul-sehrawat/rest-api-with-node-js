@@ -6,7 +6,7 @@ const app = express()
 const PORT = 3000
 
 
-app.use(express.urlencoded({extended:true})) // this middleware is for encoded form request
+app.use(express.urlencoded({extended:false})) // this middleware is for encoded form request
 app.use(express.json()) // this middleware is for json request
 
 app.get("/",(req,res)=>{
